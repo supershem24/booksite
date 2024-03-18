@@ -9,10 +9,19 @@ async function getBooks(){
         .from('books')
         .select('*')
 
+    let columns = ["id", "created_at", "title", "author", "ISBN"];
     for(let book of books){
         let bookList = document.getElementById('books');
-        bookList.innerHTML += `<li>${books.title}</li>`;
+        bookList.innerHTML += `<td id = "${column}">
+            <tr>${book.id}</tr>
+            <tr>${book.created_at}</tr>
+            <tr>${book.title}</tr>
+            <tr>${book.author}</tr>
+            <tr>${book.ISBN}</tr>
+        </td>`
     }
+
+    
 }
 
 getBooks();
