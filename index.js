@@ -12,13 +12,13 @@ async function getBooks(){
     let columns = ["id", "created_at", "title", "author", "ISBN"];
     for(let book of books){
         let bookList = document.getElementById('books');
-        bookList.innerHTML += `<td>
-            <tr>${book.id}</tr>
-            <tr>${book.created_at}</tr>
-            <tr>${book.title}</tr>
-            <tr>${book.author}</tr>
-            <tr>${book.ISBN}</tr>
-        </td>`
+        bookList.innerHTML += `<tr>
+            <td>${book.id}</td>
+            <td>${book.created_at}</td>
+            <td>${book.title}</td>
+            <td>${book.author}</td>
+            <td>${book.ISBN}</td>
+        </tr>`
     }
 
     
