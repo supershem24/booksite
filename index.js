@@ -9,7 +9,6 @@ async function getBooks(){
         .from('books')
         .select('*')
 
-    let columns = ["id", "created_at", "title", "author", "ISBN"];
     for(let book of books){
         let bookList = document.getElementById('books');
         bookList.innerHTML += `<tr>
@@ -20,8 +19,6 @@ async function getBooks(){
             <td>${book.ISBN}</td>
         </tr>`
     }
-
-    
 }
 
 getBooks();
