@@ -1,4 +1,4 @@
-import { createClient } from '/node_modules/@supabase/supabase-js'
+import { createClient } from supabase
 
 const supabaseUrl = 'https://cecpqnipsjocjrggycon.supabase.co'
 const supabaseKey = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNlY3Bxbmlwc2pvY2pyZ2d5Y29uIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTA3MDM5NjcsImV4cCI6MjAyNjI3OTk2N30.TvYs7xbE4Fn2Quus8utQBSFHYmtxEEjEX8raYjFtNlU
